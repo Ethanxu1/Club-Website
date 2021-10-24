@@ -1,0 +1,263 @@
+body {
+}
+/* ----- MAIN PAGE CONTAINER ----- */
+.main-page-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* ----- HEADER ----- */
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----- LOGO (IMG/TEXT) ----- */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgb(116, 51, 51);
+}
+
+header img{
+    
+}
+
+header p {
+    text-align: center;
+    font-size: 3rem;
+
+    color: rgb(228, 158, 158);
+}
+
+/* ----- NAV ----- */
+nav {
+    background-color: rgb(112, 180, 116);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;   
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    font-weight: 1.5;
+    font-size: 1.5rem;
+}
+
+/* ----- MAIN ----- */
+main {
+    background-color: rgb(235, 225, 225);
+}
+/* ----- ANOUNCEMENTS/GENERAL INFO CONTAINER */
+
+.anouncements-general-info-container {
+    display: flex;
+    margin: 5px;
+}
+
+
+
+/* ----- GENERAL INFO ----- */
+.general-info-box {
+    background-color: white;
+    flex: 1;
+    margin: 6px;
+    border-radius:10px;
+    order: 1;
+}
+
+.general-info-box h1 {
+    text-align: center;
+}
+
+.general-info-box p {
+    height: 50vh;
+    overflow-y: scroll;
+}
+
+.signup-presentation-btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.signup-presentation-btns li {
+    list-style: none;
+    background-color: rgb(58, 153, 74);
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+.signup-presentation-btns li a {
+    color: rgb(116, 51, 51);
+    font-weight: bold;
+}
+
+/* ----- ANOUNCEMENTS ----- */
+.announcements  {
+    margin: 6px;
+    flex: 1;
+    background-color: white;
+    border-radius:10px;
+    order: 2;
+}
+
+.announcements  h1 {
+    text-align: center;
+}
+
+.announcements  ul{
+    height: 500px;
+    overflow-y: scroll;
+}
+/* ----- TWITTER FEED/CALENDAR CONTAINER ----- */
+.calendar-container {
+    display: flex; 
+}
+
+/* ----- TWITTER FEED ----- */
+.twitter-feed-box {
+    background-color: #ffffff;
+    flex: 1;
+    height: 400px;
+    margin: 6px;
+    border-radius:10px
+}
+
+.twitter-feed-box h1 {
+    text-align: center;
+}
+
+/* ----- UPCOMING EVENTS ----- */
+.upcoming-events {
+    background-color: white;
+    flex: 2;
+    margin: 6px;
+    border-radius:10px
+}
+
+.upcoming-events h1 {
+    text-align: center;
+}
+
+.upcoming-events {
+    background-color: white;
+}
+
+.upcoming-events ul {
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.upcoming-events ul li {
+    font-size: 1.6rem;
+}
+
+/* ----- CALENDAR ----- */
+.calendar {
+    flex: 2;
+    height: 70vh;
+    margin: 10px;
+}
+
+.calendar iframe {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* ----- SCROLL BAR FOR ANOUNCEMENTS ----- */
+.announcements  ul::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  .announcements  ul::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  .announcements  ul::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  .announcements  ul::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+  }
+
+/* ----- SCROLL BAR FOR GENERAL INFO ----- */
+.general-info-box p::-webkit-scrollbar {
+    width: 20px;
+}
+
+.general-info-box p::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.general-info-box p::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.general-info-box p::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+/* ----- SCROLL BAR FOR UPCOMING EVENTS ----- */
+.upcoming-events ul::-webkit-scrollbar {
+    width: 20px;
+}
+  
+.upcoming-events ul::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.upcoming-events ul::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.upcoming-events ul::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+/* ----- SCROLL BAR FOR html ----- */
+html::-webkit-scrollbar {
+  width: 20px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: rgb(219, 186, 186);
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #7c5d5d;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+
+/* ----- SCREEN WIDTH <  */
+
+@media screen and (max-width: 750px){
+    
+}
