@@ -252,12 +252,24 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-thumb:hover {
-  background-color: #a8bbbf;
+  background-color: #683a3a;
 }
 
 
 /* ----- SCREEN WIDTH <  */
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 1000px){
+    .anouncements-general-info-container {
+        display: flex;
+        flex-direction: column;
+    }
     
+    .calendar-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calendar iframe{
+        height: 60vh;
+    }
 }
