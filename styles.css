@@ -1,18 +1,23 @@
+/* ----------------------------------------------------- */
+/* -------------------- GENERAL CSS -------------------- */
+/* ----------------------------------------------------- */
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
 body {
 }
-/* ----- MAIN PAGE CONTAINER ----- */
-.main-page-container {
-    display: flex;
-    flex-direction: column;
-    
-}
+
 
 /* ----- HEADER ----- */
 
 header {
     display: flex;
     flex-direction: column;
-    position: sticky;
 }
 
 /* ----- LOGO (IMG/TEXT) ----- */
@@ -58,13 +63,12 @@ nav {
     vertical-align: middle;
     line-height: 50px;
     transition: .5s;
-
-}
-
-.nav-links li a {
     color: white;
     font-weight: 1.5;
     font-size: 1.5rem;
+    cursor: pointer;
+
+
 }
 
 .nav-links li:hover {
@@ -73,8 +77,10 @@ nav {
     
 }
 
-/* ----- MAIN ----- */
-main {
+/* --------------------------------------------------- */
+/* -------------------- HOME PAGE -------------------- */
+/* --------------------------------------------------- */
+#home {
     background-color: #DACFCE;
 }
 /* ----- ANOUNCEMENTS/GENERAL INFO CONTAINER */
@@ -83,8 +89,6 @@ main {
     display: flex;
     margin: 5px;
 }
-
-
 
 /* ----- GENERAL INFO ----- */
 .general-info-box {
@@ -124,9 +128,13 @@ main {
 }
 
 .signup-presentation-btns li:hover {
-    background-color: rgb(46, 122, 58);
+    background-color: rgb(55, 139, 67);
     transition: .5s;
 }
+ 
+.tab.active {
+    border-bottom: 5px solid rgb(45, 110, 55);
+} 
 
 /* ----- ANOUNCEMENTS ----- */
 .announcements  {
@@ -207,23 +215,27 @@ main {
     height: 100%;
 }
 
+/* ------------------------------------------------------------ */
+/* -------------------- SCROLL BAR STYLING -------------------- */
+/* ------------------------------------------------------------ */
+
 /* ----- SCROLL BAR FOR ANOUNCEMENTS ----- */
-.announcements  ul::-webkit-scrollbar {
+.announcements ul::-webkit-scrollbar {
     width: 20px;
   }
   
-  .announcements  ul::-webkit-scrollbar-track {
+  .announcements ul::-webkit-scrollbar-track {
     background-color: transparent;
   }
   
-  .announcements  ul::-webkit-scrollbar-thumb {
+  .announcements ul::-webkit-scrollbar-thumb {
     background-color: #d6dee1;
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;
   }
   
-  .announcements  ul::-webkit-scrollbar-thumb:hover {
+  .announcements ul::-webkit-scrollbar-thumb:hover {
     background-color: #a8bbbf;
   }
 
@@ -286,6 +298,33 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-thumb:hover {
   background-color: #683a3a;
 }
+
+/* ------------------------------------------------------ */
+/* -------------------- SIGN UP PAGE -------------------- */
+/* ------------------------------------------------------ */
+#sign-up {
+    background-color: #DACFCE;
+}
+
+.sign-up {
+    display: flex;
+    
+}
+
+/* ------------------------------------------------------- */
+/* -------------------- CONTACTS PAGE -------------------- */
+/* ------------------------------------------------------- */
+#contacts {
+    background-color: #DACFCE;
+}
+
+.contacts-table td{
+    padding: 10px;
+}
+
+/* -------------------------------------------------------------- */
+/* -------------------- SMALL SCREEN LAYOUTS -------------------- */
+/* -------------------------------------------------------------- */
 
 
 /* ----- SCREEN WIDTH < 1000px ----- */
