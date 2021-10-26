@@ -10,6 +10,7 @@
 }
 
 body {
+    background-color: #DACFCE;
 }
 
 
@@ -47,10 +48,9 @@ nav {
 
 .nav-links {
     display: flex;
-    /* justify-content: space-around;    */
+    justify-content: space-between;  
     margin: 0 0;
     padding: 0 0;
-    width: 100%;
 }
 
 .nav-links li {
@@ -76,6 +76,11 @@ nav {
     transition: .5s;
     
 }
+
+.tab.active {
+    border-bottom: 5px solid rgb(45, 110, 55);
+
+} 
 
 /* --------------------------------------------------- */
 /* -------------------- HOME PAGE -------------------- */
@@ -106,35 +111,43 @@ nav {
 .general-info-box p {
     height: 50vh;
     overflow-y: scroll;
+    font-size: 1.3rem;
 }
 
-/* ----- SIGN UP/PRESENTATION BTNS */
+/* ----- SIGN UP/PRESENTATION BTNS -----*/
 .signup-presentation-btns {
     display: flex;
     justify-content: space-around;
+    padding-left: 0;
 }
 
 .signup-presentation-btns li {
     list-style: none;
     background-color: rgb(58, 153, 74);
     font-size: 1.5rem;
-    padding: 15px;
     transition: .5s;
+    padding: 0;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: center;
+    line-height: 50px;
+
 }
 
 .signup-presentation-btns li a {
+    display: block;
     color: rgb(116, 51, 51);
     font-weight: bold;
+    /* padding: 10px 20px; */
+    width: 200px;
+    height: 50px;
+    
 }
 
 .signup-presentation-btns li:hover {
     background-color: rgb(55, 139, 67);
     transition: .5s;
 }
- 
-.tab.active {
-    border-bottom: 5px solid rgb(45, 110, 55);
-} 
 
 /* ----- ANOUNCEMENTS ----- */
 .announcements  {
@@ -169,7 +182,7 @@ nav {
 }
 /* ----- TWITTER FEED ----- */
 .twitter-feed-box {
-    background-color: rgb(46, 122, 58);
+    background-color: rgb(63, 145, 75);
     flex: 1;
     height: 400px;
     margin: 6px;
@@ -306,6 +319,12 @@ html::-webkit-scrollbar-thumb:hover {
     background-color: #DACFCE;
 }
 
+#sign-up h1{
+    text-align: center;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid black;
+}
+
 .sign-up {
     display: flex;
     
@@ -316,10 +335,19 @@ html::-webkit-scrollbar-thumb:hover {
 /* ------------------------------------------------------- */
 #contacts {
     background-color: #DACFCE;
+    font-size: 2rem;
+}
+#contacts h1 {
+    text-align: center;
+}
+
+.contacts-table {
+    border-collapse: collapse;
 }
 
 .contacts-table td{
     padding: 10px;
+    border: 1px solid black;
 }
 
 /* -------------------------------------------------------------- */
@@ -366,6 +394,10 @@ html::-webkit-scrollbar-thumb:hover {
 
     .twitter-feed-box {
         order: 1;
+    }
+
+    .contacts-table {
+        display: none;
     }
 }
 
