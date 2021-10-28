@@ -31,16 +31,13 @@ header {
 }
 
 .logo img {
-    width: 130px;
+    width: 90px;
+    margin: 5px;
 }
 
 .logo p {
     font-family: 'Offside', cursive;
     margin: 30px 0;
-}
-
-header img{
-    
 }
 
 header p {
@@ -188,39 +185,23 @@ nav {
 .announcements ul li {
     font-size: 1.5rem;
 }
-/* ----- TWITTER FEED/CALENDAR CONTAINER ----- */
+/* ----- CALENDAR CONTAINER ----- */
 .calendar-container {
     display: flex; 
     flex-wrap: wrap;
 }
-/* ----- GROUP 1 ----- */
-.group1 {
-    display: flex;
-    flex: 1.5;
-}
-/* ----- TWITTER FEED ----- */
-.twitter-feed-box {
-    background-color: rgb(63, 145, 75);
-    flex: 1;
-    height: 400px;
-    margin: 6px;
-    border-radius:10px;
-}
-
-.twitter-feed-box h1 {
-    text-align: center;
-}
 
 /* ----- UPCOMING EVENTS CONTAINER----- */
 .upcoming-events-container {
-    flex: 3;
+    flex: 1;
+    height: 70vh;
+    margin: 10px;
 }
 
 /* ----- UPCOMING EVENTS HEADER ----- */
 .upcoming-events-header{
     text-align: center;
     font-size: 2rem;
-    cursor: pointer;
 }
 
 .upcoming-events-header::after {
@@ -315,6 +296,18 @@ nav {
     text-align: center;
     font-size: 2rem;
 }
+
+/* ----- CALENDAR ----- */
+.calendar {
+    flex: 1;
+    margin: 10px;
+}
+
+.calendar iframe {
+    width: 100%;
+    height: 100%;
+}
+
 
 /* ------------------------------------------------------------ */
 /* -------------------- SCROLL BAR STYLING -------------------- */
@@ -415,7 +408,6 @@ html::-webkit-scrollbar-thumb:hover {
 
 .sign-up {
     display: flex;
-    
 }
 
 /* ------------------------------------------------------- */
@@ -441,26 +433,6 @@ html::-webkit-scrollbar-thumb:hover {
 #contacts h3 {
     display: none;
 }
-
-/* ------------------------------------------------------- */
-/* -------------------- CALENDAR PAGE -------------------- */
-/* ------------------------------------------------------- */
-
-.calendar {
-    position: relative;
-    padding-bottom: 56.25%; 
-}
-
-.calendar iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 5%;
-    width: 90%;
-    height: 100%;
-}
-
-
 /* -------------------------------------------------------------- */
 /* -------------------- SMALL SCREEN LAYOUTS -------------------- */
 /* -------------------------------------------------------------- */
@@ -490,6 +462,10 @@ html::-webkit-scrollbar-thumb:hover {
 
     .calendar-container {
         flex-direction: column;
+    }
+
+    .calendar iframe{
+        height: 70vh;
     }
 
     .upcoming-events {
