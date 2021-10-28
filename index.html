@@ -7,7 +7,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Offside&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
@@ -16,7 +16,7 @@
     <header>
         <div class="logo">
             <a href="" data-tab-target="#home">
-                <img src="TempClubLogo.png" alt="Club logo">
+                <img src="imgs/ClubLogo2.png" alt="Club logo">
             </a>
             <p>Computer Science Club</p>
         </div>
@@ -44,8 +44,6 @@
                 </p>
                 <div class="signup-presentation-btns-container">
                     <ul class="signup-presentation-btns">
-                        <!-- <li><a href="" target="_blank">A link</a></li>
-                        <li><a href="https://docs.google.com/presentation/d/12XFvx2Fmc2gr6kqO1y-jw7_ID3On2QCetypJGki-NQI/edit?usp=sharing" target="_blank">PRESENTAION</a></li> -->
                         <li><a href="" target="_blank">A link</a></li>
                         <li><a href="https://docs.google.com/presentation/d/12XFvx2Fmc2gr6kqO1y-jw7_ID3On2QCetypJGki-NQI/edit?usp=sharing" target="_blank">PRESENTAION</a></li>
                     </ul> 
@@ -54,23 +52,61 @@
         </div>
         <div class="calendar-container">
             <div class="group1">
-                <div class="twitter-feed-box">
+                <!-- <div class="twitter-feed-box">
                     <h1>Twitter Feed</h1>
                     <div class="twitter-feed">
                         <a class="twitter-timeline" data-height="63vh" href="https://twitter.com/GHHS_CS_Club?ref_src=twsrc%5Etfw">Tweets by GHHS_CS_Club</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
+                </div> -->
+                <div class="upcoming-events-container">
+                    <div class="upcoming-events-header">
+                        <h3 data-tab-target="#calendar">Upcoming Events</h3>
+                    </div>
+                    <div class="events-container">
+                        <div class="event-1">
+                            <div class="date-container">
+                                <div class="day-month-container">
+                                    <div class="day">
+                                        <p>Day</p>
+                                    </div>
+                                    <div class="month">
+                                        <p>Month</p>
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <p>00</p>
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <p>Event details</p>
+                            </div>
+                        </div>
+                        <div class="event-2">
+                            <div class="date-container">
+                                <div class="day-month-container">
+                                    <div class="day">
+                                        <p>Day</p>
+                                    </div>
+                                    <div class="month">
+                                        <p>Month</p>
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <p>00</p>
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <p>Event details</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="upcoming-events">
-                    <h1>Upcoming Events</h1>
-                    <ul>
-                        <li>blah blah blah</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="calendar">
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Z3JlZW5ob3BlY3NjbHViQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
+        <div class="instagram-feed">
+            <h3>Instagram</h3>
+            <script async src="https://walls.io/js/wallsio-widget-1.2.js" data-wallurl="https://my.walls.io/g6v5w?nobackground=1&amp;show_header=0" data-title="My social wall" data-width="100%" data-autoheight="1" data-height="800" data-lazyload="1"></script>
+        </div>    
     </div>
     <!-- SIGN UP TAB -->
     <div id="sign-up" data-tab-content>
@@ -128,6 +164,12 @@
         <a href="https://docs.google.com/spreadsheets/d/12iNXe8vYwuBoJZovUxFPDq8MO8jtlcyIYl07zrtAywM/edit?usp=sharing" target="_blank">link</a>
         to access the information. 
         </h3>
+    </div>
+
+    <div id="calendar" data-tab-content>
+        <div class="calendar" >
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Z3JlZW5ob3BlY3NjbHViQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
     </div>
     <script src='app.js'></script>
 </body>
