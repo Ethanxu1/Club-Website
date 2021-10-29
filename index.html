@@ -17,31 +17,36 @@
     <header>
         <div class="logo">
             <a href="" data-tab-target="#home">
-                <img src="imgs/ClubLogo.png" alt="Club logo">
+                <img src="imgs/ClubLogo2.png" alt="Club logo">
             </a>
             <p>Computer Science Club</p>
         </div>
         <nav>
             <ul class="nav-links">
-                <li data-tab-target="#home" class="tab active">HOME</li>
+                <li data-tab-target="#home" class="tab active">HOME</l  i>
                 <li data-tab-target="#sign-up" class="tab">SIGN UP</li>
                 <li data-tab-target="#contacts" class="tab">CONTACTS</li>
             </ul>
         </nav>
     </header>
     <!-- HOME TAB -->
-    <div id="home" data-tab-content class="active">
+        <div id="home" data-tab-content class="active">
         <div class="anouncements-general-info-container">
             <div class="announcements">
                 <h1>Announcements</h1>
                 <ul>
-                    <li>blah blah blah</li>
+                    <li>We will be having a Club interest meeting on Thusday 11/4/2021</li>
                 </ul>
             </div>
             <div class="general-info-box">
                 <h1>Some title for general info</h1>
                 <p>
-                    General info.... blah blah blah
+                    In our club we wish to increase all our club members' interest and skill in programming with Java and Python. 
+                    We will be teaching Java and python programming to the skill level in order to do well on the ACSL competition. 
+                    We will be competing in the Intermediate and Senior divisions of the competition. 
+                    The club will have an entry free of __TBD___ for those who wish to attend the competition. 
+                    We will also be reaching out to other schools, organizations, clubs etc. 
+                    For those who do not wish to attend the competition, we will be doing other things like an End of year Symposium. 
                 </p>
                 <div class="signup-presentation-btns-container">
                     <ul class="signup-presentation-btns">
@@ -52,51 +57,50 @@
             </div>
         </div>
         <div class="calendar-container">
-            <div class="upcoming-events-container">
-                <div class="upcoming-events-header">
-                    <h3>Upcoming Events</h3>
-                </div>
-                <div class="events-container">
-                    <div class="event-1">
-                        <div class="date-container">
-                            <div class="day-month-container">
-                                <div class="day">
-                                    <p>Day</p>
+            <div class="group1">
+                <div class="upcoming-events-container">
+                    <div class="upcoming-events-header">
+                        <h3 data-tab-target="#calendar">Upcoming Events</h3>
+                    </div>
+                    <div class="events-container">
+                        <div class="event-1">
+                            <div class="date-container">
+                                <div class="day-month-container">
+                                    <div class="day">
+                                        <p>Thursday</p>
+                                    </div>
+                                    <div class="month">
+                                        <p>November</p>
+                                    </div>
                                 </div>
-                                <div class="month">
-                                    <p>Month</p>
+                                <div class="date">
+                                    <p>04</p>
                                 </div>
                             </div>
-                            <div class="date">
-                                <p>00</p>
+                            <div class="event-details">
+                                <p>Club interest meeting</p>
                             </div>
                         </div>
-                        <div class="event-details">
-                            <p>Event details</p>
+                        <div class="event-2">
+                            <div class="date-container">
+                                <div class="day-month-container">
+                                    <div class="day">
+                                        <p>Day</p>
+                                    </div>
+                                    <div class="month">
+                                        <p>Month</p>
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <p>00</p>
+                                </div>
+                            </div>
+                            <div class="event-details">
+                                <p>Event details</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="event-2">
-                        <div class="date-container">
-                            <div class="day-month-container">
-                                <div class="day">
-                                    <p>Day</p>
-                                </div>
-                                <div class="month">
-                                    <p>Month</p>
-                                </div>
-                            </div>
-                            <div class="date">
-                                <p>00</p>
-                            </div>
-                        </div>
-                        <div class="event-details">
-                            <p>Event details</p>
-                        </div>
-                    </div>
                 </div>
-            </div>
-            <div class="calendar">
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Z3JlZW5ob3BlY3NjbHViQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
             </div>
         </div>
         <div class="instagram-feed">
@@ -161,7 +165,11 @@
         to access the information. 
         </h3>
     </div>
+    <div id="calendar" data-tab-content>
+        <div class="calendar" >
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Z3JlZW5ob3BlY3NjbHViQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </div>
     <script src='app.js'></script>
 </body>
 </html>
-
