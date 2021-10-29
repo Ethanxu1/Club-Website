@@ -31,8 +31,7 @@ header {
 }
 
 .logo img {
-    width: 90px;
-    margin: 5px;
+    width: 130px;
 }
 
 .logo p {
@@ -62,7 +61,6 @@ nav {
 .nav-links li {
     list-style: none;
     flex: 1;
-    /* text-align: center; */
     height: 50px;
     margin: auto;
     text-align: center;
@@ -146,7 +144,6 @@ nav {
     vertical-align: center;
     line-height: 50px;
     margin: 10px;
-
 }
 
 .signup-presentation-btns li a {
@@ -155,8 +152,7 @@ nav {
     font-weight: bold;
     /* padding: 10px 20px; */
     width: 200px;
-    height: 50px;
-    
+    height: 50px;  
 }
 
 .signup-presentation-btns li:hover {
@@ -190,18 +186,23 @@ nav {
     display: flex; 
     flex-wrap: wrap;
 }
+/* ----- GROUP 1 ----- */
+.group1 {
+    display: flex;
+    flex: 1.5;
+}
+
 
 /* ----- UPCOMING EVENTS CONTAINER----- */
 .upcoming-events-container {
     flex: 1;
-    height: 70vh;
-    margin: 10px;
 }
 
 /* ----- UPCOMING EVENTS HEADER ----- */
 .upcoming-events-header{
     text-align: center;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .upcoming-events-header::after {
@@ -214,6 +215,12 @@ nav {
 
 .upcoming-events-header h3 {
     margin-bottom: 0;
+    /* width: 400px; */
+}
+
+.upcoming-events-header h3:hover {
+    color: rgb(45, 110, 55);
+    
 }
 
 /* ----- EVENTS CONTAINER */
@@ -296,18 +303,6 @@ nav {
     text-align: center;
     font-size: 2rem;
 }
-
-/* ----- CALENDAR ----- */
-.calendar {
-    flex: 1;
-    margin: 10px;
-}
-
-.calendar iframe {
-    width: 100%;
-    height: 100%;
-}
-
 
 /* ------------------------------------------------------------ */
 /* -------------------- SCROLL BAR STYLING -------------------- */
@@ -408,6 +403,7 @@ html::-webkit-scrollbar-thumb:hover {
 
 .sign-up {
     display: flex;
+    
 }
 
 /* ------------------------------------------------------- */
@@ -433,6 +429,26 @@ html::-webkit-scrollbar-thumb:hover {
 #contacts h3 {
     display: none;
 }
+
+/* ------------------------------------------------------- */
+/* -------------------- CALENDAR PAGE -------------------- */
+/* ------------------------------------------------------- */
+
+.calendar {
+    position: relative;
+    padding-bottom: 56.25%; 
+}
+
+.calendar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 5%;
+    width: 90%;
+    height: 100%;
+}
+
+
 /* -------------------------------------------------------------- */
 /* -------------------- SMALL SCREEN LAYOUTS -------------------- */
 /* -------------------------------------------------------------- */
@@ -451,7 +467,6 @@ html::-webkit-scrollbar-thumb:hover {
         flex-direction: column;
     }
     
-
     .upcoming-events {
         order: 1;
     }
@@ -462,10 +477,6 @@ html::-webkit-scrollbar-thumb:hover {
 
     .calendar-container {
         flex-direction: column;
-    }
-
-    .calendar iframe{
-        height: 70vh;
     }
 
     .upcoming-events {
