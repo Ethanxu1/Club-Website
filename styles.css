@@ -391,6 +391,31 @@ html::-webkit-scrollbar-thumb:hover {
 /* ------------------------------------------------------ */
 /* -------------------- SIGN UP PAGE -------------------- */
 /* ------------------------------------------------------ */
+
+#sign-up-links ul{
+    list-style: none;
+    font-size: 3rem;
+    text-align: center;
+
+}
+
+#sign-up-links ul li {
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+#sign-up-links ul li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 10px 0px;
+}
+/* ----------------------------------------------------------- */
+/* -------------------- CLUB SIGN UP PAGE -------------------- */
+/* ----------------------------------------------------------- */
+
 #sign-up {
     background-color: #DACFCE;
 }
@@ -405,7 +430,30 @@ html::-webkit-scrollbar-thumb:hover {
     display: flex;
     
 }
+/* ------------------------------------------------------------------ */
+/* -------------------- COMPETITION SIGN UP PAGE -------------------- */
+/* ------------------------------------------------------------------ */
 
+#competition-sign-up {
+    background-color: #DACFCE;
+}
+
+#competition-sign-up h1{
+    text-align: center;
+    padding: 0 0 5px 0;
+}
+
+#competition-sign-up h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.competition-sign-up {
+    display: flex;   
+}
 /* ------------------------------------------------------- */
 /* -------------------- CONTACTS PAGE -------------------- */
 /* ------------------------------------------------------- */
