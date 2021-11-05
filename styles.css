@@ -224,26 +224,28 @@ nav {
 }
 
 /* ----- EVENTS CONTAINER */
-.events-container {
+.events-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 /* ----- EVENTS ----- */
-.event-1,
-.event-2{
+[event],
+[last]{
     height: 40vh;
     width: 30vh;
-    padding: 10px;
+    padding: 0px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-right: 1.5px dotted black;
+    list-style: none;
 }
 
-.event-1 {
-    border-right: dotted 2px grey;
+[last] {
+    border-right: none;
 }
 
 /* ----- EVENT DATE STRUCTURING */
@@ -285,8 +287,9 @@ nav {
     color: #9b2743;
     text-align: center;
     vertical-align: center;
-    line-height: 30px;
-    font-size: 2rem;
+    line-height: 50px;
+    font-size: 2.5rem;
+    margin-left: 5px;
 }
 
 .date p {
@@ -297,11 +300,8 @@ nav {
 
 .event-details {
     font-size: 1.5rem;
-}
-
-.instagram-feed h3{
-    text-align: center;
-    font-size: 2rem;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 /* ------------------------------------------------------------ */
@@ -430,6 +430,9 @@ html::-webkit-scrollbar-thumb:hover {
     display: flex;
     
 }
+
+
+
 /* ------------------------------------------------------------------ */
 /* -------------------- COMPETITION SIGN UP PAGE -------------------- */
 /* ------------------------------------------------------------------ */
